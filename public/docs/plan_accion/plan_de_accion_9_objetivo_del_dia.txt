@@ -1,0 +1,63 @@
+1. Diseñar el sistema de objetivos diarios:
+   - Crear una estructura de datos para representar un objetivo diario
+   - Definir los componentes de un objetivo (descripción, recompensa, estado de completado)
+
+2. Implementar la interfaz de usuario para objetivos diarios:
+   - Crear una pantalla donde los jugadores puedan ver y establecer su objetivo diario
+   - Diseñar un formulario para que los jugadores ingresen su objetivo personalizado
+
+3. Crear el sistema de validación de objetivos:
+   - Implementar una función que verifique si el objetivo ingresado es válido (no está vacío, es realista, etc.)
+   - Crear un sistema de sugerencias para ayudar a los jugadores a establecer objetivos apropiados
+
+4. Implementar el sistema de seguimiento de objetivos:
+   - Crear una función que permita a los jugadores marcar su objetivo como completado
+   - Implementar un temporizador que reinicie el objetivo al comienzo de cada día
+
+5. Diseñar el sistema de recompensas:
+   - Definir las recompensas por completar objetivos diarios (por ejemplo, DLA extra, boost de experiencia)
+   - Implementar la lógica para otorgar recompensas cuando se completa un objetivo
+
+6. Integrar con otros sistemas:
+   - Conectar los objetivos diarios con el sistema de evaluación diaria
+   - Incorporar los objetivos completados en los informes semanales
+
+7. Implementar la persistencia de datos:
+   - Guardar el objetivo actual y el historial de objetivos completados
+   - Cargar estos datos al iniciar el juego cada día
+
+8. Crear un sistema de estadísticas de objetivos:
+   - Implementar un seguimiento del porcentaje de objetivos completados a lo largo del tiempo
+   - Crear logros relacionados con la consistencia en completar objetivos
+
+9. Implementar notificaciones:
+   - Crear recordatorios para establecer un objetivo al comienzo del día
+   - Implementar notificaciones para animar al jugador a completar su objetivo
+
+10. Diseñar un sistema de objetivos encadenados:
+    - Permitir a los jugadores establecer objetivos relacionados para varios días consecutivos
+    - Implementar recompensas adicionales por completar cadenas de objetivos
+
+11. Crear un sistema de análisis de objetivos:
+    - Implementar un algoritmo que analice los objetivos completados para ofrecer sugerencias personalizadas
+    - Crear visualizaciones que muestren las tendencias en los tipos de objetivos establecidos y completados
+
+12. Pruebas:
+    - Crear casos de prueba para verificar la correcta creación, seguimiento y completado de objetivos
+    - Probar escenarios de objetivos a largo plazo y su impacto en el juego
+    - Verificar que las recompensas por objetivos estén equilibradas con otros sistemas del juego
+
+13. Documentación:
+    - Crear un archivo 'objetivo_del_dia.md' en la carpeta 'docs/features/'
+    - Documentar cómo funcionan los objetivos diarios
+    - Explicar el sistema de recompensas por completar objetivos
+    - Incluir ejemplos de objetivos y sus efectos en el juego
+    - Documentar cómo se integran los objetivos con otros sistemas del juego
+
+14. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de objetivos diarios
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+15. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de objetivos diarios
+    - Incluir un enlace a la documentación detallada en 'docs/features/objetivo_del_dia.md'

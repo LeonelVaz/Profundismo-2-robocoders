@@ -1,0 +1,249 @@
+1. Definir la estructura de datos para las actividades diarias:
+   - Crear un objeto o clase para representar cada actividad
+   - Incluir propiedades para el nombre de la actividad, la categoría a la que pertenece, y los puntos de experiencia para cada estado (realizado, a medias, no realizado)
+
+2. Implementar el sistema de registro de actividades:
+   - Crear una interfaz para que los usuarios marquen las actividades como realizadas, a medias o no realizadas
+   - Implementar la lógica para registrar el estado de cada actividad diariamente
+
+3. Crear el sistema de puntuación:
+   - Implementar una función que calcule los puntos de experiencia ganados o perdidos basados en el estado de cada actividad
+   - Asegurar que los puntos se apliquen a la categoría correcta
+
+4. Integrar con el sistema de niveles y experiencia:
+   - Conectar el sistema de puntuación con las funciones de manejo de experiencia creadas en el plan anterior
+
+5. Crear una interfaz de usuario para las actividades diarias:
+   - Diseñar una lista de actividades diarias organizadas por categoría
+   - Implementar botones o controles para marcar el estado de cada actividad
+   - Mostrar los puntos de experiencia ganados o perdidos por cada actividad
+
+6. Implementar la persistencia de datos:
+   - Guardar el estado de las actividades diarias
+   - Cargar estos datos al iniciar el juego cada día
+
+7. Crear un sistema de reinicio diario:
+   - Implementar una función que reinicie el estado de las actividades al comienzo de cada día
+
+8. Pruebas:
+   - Crear casos de prueba para verificar el correcto funcionamiento del sistema de actividades y puntuación
+   - Probar diferentes combinaciones de actividades realizadas, a medias y no realizadas
+   - Verificar que los puntos de experiencia se apliquen correctamente a cada categoría
+
+9. Documentación:
+   - Crear un archivo 'actividades_y_puntuacion.md' en la carpeta 'docs/features/'
+   - Documentar la estructura de datos de las actividades diarias
+   - Explicar el sistema de puntuación y cómo afecta a la experiencia
+   - Incluir ejemplos de actividades y sus puntuaciones
+   - Documentar cómo se integra con el sistema de categorías y niveles
+
+10. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de actividades y puntuación
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+11. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de actividades y puntuación
+    - Incluir un enlace a la documentación detallada en 'docs/features/actividades_y_puntuacion.md'
+
+
+
+
+
+Entendido. Voy a preparar un archivo de texto detallado para el plan de acción 2, incluyendo toda la información necesaria del proyecto para su correcta comprensión e implementación. Me basaré en la información proporcionada en desarrollo.md y tendré en cuenta el progreso realizado en el plan de acción 1. El archivo se centrará en proporcionar una guía clara y detallada para el desarrollador, sin incluir ejemplos de código específicos. Aquí está el contenido sugerido para el archivo plan_de_accion_2_actividades_y_puntuacion.txt:
+
+# Plan de Acción 2: Implementación de Actividades Diarias y Sistema de Puntuación
+
+## Contexto del Proyecto
+"Profundismo RPG" es un sistema de desarrollo personal gamificado que permite a los usuarios rastrear y mejorar varios aspectos de su vida diaria. Este plan de acción se centra en la implementación del sistema de actividades diarias y puntuación, que es fundamental para la interacción diaria del usuario con el juego.
+
+## Objetivos
+1. Implementar la estructura de datos para las actividades diarias.
+2. Desarrollar el sistema de registro de actividades.
+3. Crear el sistema de puntuación basado en el estado de las actividades.
+4. Integrar el sistema de puntuación con el sistema de niveles y experiencia existente.
+5. Diseñar e implementar la interfaz de usuario para las actividades diarias.
+6. Implementar la persistencia de datos para las actividades diarias.
+7. Crear un sistema de reinicio diario de actividades.
+
+## Estructura de Datos
+
+### Actividades Diarias
+- Cada actividad debe tener:
+  - Nombre
+  - Categoría a la que pertenece (Mente, Cuerpo, Alimentación, Higiene, Economía, Sueño)
+  - Puntos de experiencia para cada estado (realizado, a medias, no realizado)
+
+### Estados de Actividad
+- Realizado
+- A medias
+- No realizado
+
+## Sistema de Registro de Actividades
+
+- Implementar una interfaz para que los usuarios marquen las actividades como realizadas, a medias o no realizadas.
+- Crear la lógica para registrar el estado de cada actividad diariamente.
+- Asegurar que el estado de las actividades se reinicie al comienzo de cada día.
+
+## Sistema de Puntuación
+
+- Desarrollar una función que calcule los puntos de experiencia ganados o perdidos basados en el estado de cada actividad.
+- Asegurar que los puntos se apliquen a la categoría correcta.
+- Integrar este sistema con el sistema de experiencia y niveles implementado en el plan de acción 1.
+
+## Interfaz de Usuario
+
+- Diseñar una lista de actividades diarias organizadas por categoría.
+- Implementar botones o controles para marcar el estado de cada actividad.
+- Mostrar los puntos de experiencia ganados o perdidos por cada actividad.
+- Actualizar la interfaz en tiempo real cuando se marquen las actividades.
+
+## Persistencia de Datos
+
+- Implementar funciones para guardar el estado de las actividades diarias.
+- Crear funciones para cargar estos datos al iniciar el juego cada día.
+- Asegurar que los datos se guarden de manera segura y eficiente.
+
+## Sistema de Reinicio Diario
+
+- Implementar una función que reinicie el estado de las actividades al comienzo de cada día.
+- Considerar la posibilidad de un reinicio automático a media noche o cuando el usuario inicie sesión en un nuevo día.
+
+## Integración con el Sistema Existente
+
+- Asegurar que el sistema de actividades y puntuación se integre correctamente con el sistema de categorías y niveles implementado en el plan de acción 1.
+- Verificar que la experiencia ganada o perdida por las actividades afecte correctamente los niveles de las categorías correspondientes.
+
+## Consideraciones Técnicas
+
+- Utilizar JavaScript para la lógica del juego y la manipulación del DOM.
+- Implementar la interfaz de usuario utilizando HTML y CSS, manteniendo la consistencia con el diseño existente.
+- Considerar el uso de localStorage o IndexedDB para la persistencia de datos en el navegador.
+- Mantener el código modular y fácilmente extensible para futuras características.
+
+## Pasos de Implementación
+
+1. Definir la estructura de datos para las actividades diarias.
+2. Implementar el sistema de registro de actividades.
+3. Desarrollar el sistema de puntuación.
+4. Integrar con el sistema de niveles y experiencia existente.
+5. Crear la interfaz de usuario para las actividades diarias.
+6. Implementar la persistencia de datos.
+7. Crear el sistema de reinicio diario.
+8. Realizar pruebas exhaustivas.
+9. Documentar el sistema de actividades y puntuación.
+10. Actualizar el CHANGELOG.md y README.md.
+
+## Pruebas
+
+- Crear casos de prueba para verificar el correcto funcionamiento del sistema de actividades y puntuación.
+- Probar diferentes combinaciones de actividades realizadas, a medias y no realizadas.
+- Verificar que los puntos de experiencia se apliquen correctamente a cada categoría.
+- Asegurar que el reinicio diario funcione correctamente.
+
+## Documentación
+
+- Crear un archivo 'actividades_y_puntuacion.md' en la carpeta 'docs/features/'.
+- Documentar la estructura de datos de las actividades diarias.
+- Explicar el sistema de puntuación y cómo afecta a la experiencia.
+- Incluir ejemplos de actividades y sus puntuaciones.
+- Documentar cómo se integra con el sistema de categorías y niveles.
+
+## Actualización de Archivos del Proyecto
+
+- Actualizar el CHANGELOG.md con la implementación del sistema de actividades y puntuación.
+- Modificar el README.md para incluir una breve descripción del nuevo sistema implementado.
+
+## Estructura Actual del Proyecto
+
+Estructura del proyecto
+¦   CHANGELOG.md
+¦   index.html
+¦   README.md
+¦   
++---backup
+¦           
++---docs
+¦   ¦   index.md
+¦   ¦   
+¦   +---dev
+¦   ¦       desarrollo.md
+¦   ¦       example_resumen_semanal.txt
+¦   ¦       
+¦   +---guides
+¦   ¦       getting_started.md  (Aun vacio)
+¦   ¦       
+¦   +---plan_accion
+¦   ¦       plan_de_accion_1_categorias_y_niveles.txt (Implementacion terminada)
+¦   ¦       plan_de_accion_2_actividades_y_puntuacion.txt (Este archivo)
+¦   ¦       plan_de_accion_3_sistema_experiencia.txt
+¦   ¦       plan_de_accion_4_evaluacion_e_informes.txt
+¦   ¦       plan_de_accion_5_historial_y_persistencia.txt
+¦   ¦       plan_de_accion_6_mecanica_muerte_victoria.txt
+¦   ¦       plan_de_accion_7_umbrales_adaptativos.txt
+¦   ¦       plan_de_accion_8_moneda_dla.txt
+¦   ¦       plan_de_accion_9_objetivo_del_dia.txt
+¦   ¦       plan_de_accion_10_notas_y_agenda.txt
+¦   ¦       plan_de_accion_11_perfiles_y_creacion_perfiles.txt
+¦   ¦       plan_de_accion_12_inventario_y_equipamiento.txt
+¦   ¦       plan_de_accion_13_tienda.txt
+¦   ¦       plan_de_accion_14_item_dia_libre.txt
+¦   ¦       plan_de_accion_15_motivador_ai.txt
+¦   ¦       
+¦   +---prompts
+¦           
++---interface
+¦   +---character-creation
+¦   ¦       character-creation.css
+¦   ¦       character-creation.html
+¦   ¦       
+¦   +---common
+¦   ¦       common.css
+¦   ¦       
+¦   +---daily-activities
+¦   ¦       daily-activities.css (Aun vacio)
+¦   ¦       daily-activities.html (Aun vacio)
+¦   ¦       
+¦   +---game-screen
+¦   ¦       game-screen.css
+¦   ¦       game-screen.html
+¦   ¦       
+¦   +---history
+¦   ¦       history.css (Aun vacio)
+¦   ¦       history.html (Aun vacio)
+¦   ¦       
+¦   +---main-menu
+¦   ¦       main-menu.css
+¦   ¦       main-menu.html
+¦   ¦       
+¦   +---store
+¦   ¦       store.css (Aun vacio)
+¦   ¦       store.html (Aun vacio)
+¦   ¦       
+¦   +---weekly-report
+¦           weekly-report.css (Aun vacio)
+¦           weekly-report.html (Aun vacio)
+¦           
++---js
+    ¦   main.js
+    ¦   
+    +---test
+    ¦   +---categoriesAndLevelsTests.js
+    ¦
+    +---modules
+    ¦       categoriesAndLevels.js (Aqui se realizó la implementacion 1)
+    ¦       characterCreation.js
+    ¦       gameLogic.j
+    ¦       saveLoad.js
+    ¦       uiController.js
+    ¦       
+    +---utils
+            initParticles.js
+            particles-config.js
+
+## Notas Adicionales
+
+- Asegurarse de que el sistema sea fácilmente adaptable para futuras modificaciones o adiciones de actividades.
+- Considerar la posibilidad de permitir a los usuarios personalizar sus propias actividades en el futuro.
+- Tener en cuenta la futura implementación de perfiles de usuario que puedan afectar las actividades disponibles y sus puntuaciones.
+
+Este plan de acción proporciona una guía detallada para la implementación del sistema de actividades diarias y puntuación en "Profundismo RPG". Asegúrate de seguir las mejores prácticas de desarrollo web y mantener una comunicación abierta con el equipo para resolver cualquier duda o desafío que pueda surgir durante la implementación.

@@ -1,0 +1,69 @@
+1. Diseñar la estructura de datos para notas y agenda:
+   - Crear un objeto o clase para representar una nota (título, contenido, fecha de creación, etiquetas)
+   - Diseñar una estructura para representar eventos en la agenda (título, fecha, hora, descripción, recordatorio)
+
+2. Implementar la interfaz de usuario para notas:
+   - Crear una pantalla para ver todas las notas existentes
+   - Diseñar un formulario para crear y editar notas
+   - Implementar un sistema de búsqueda y filtrado de notas
+
+3. Crear la interfaz de usuario para la agenda:
+   - Diseñar una vista de calendario para la agenda
+   - Implementar un formulario para crear y editar eventos en la agenda
+   - Crear una vista de lista para eventos próximos
+
+4. Implementar el sistema de etiquetas para notas:
+   - Crear una función para añadir y eliminar etiquetas de las notas
+   - Implementar un sistema de filtrado basado en etiquetas
+
+5. Crear el sistema de recordatorios para la agenda:
+   - Implementar notificaciones para eventos próximos
+   - Crear opciones de personalización para los recordatorios (tiempo de anticipación, tipo de notificación)
+
+6. Implementar la persistencia de datos:
+   - Guardar todas las notas y eventos de la agenda
+   - Implementar un sistema de sincronización si se usa almacenamiento en la nube
+
+7. Crear funcionalidades de organización:
+   - Implementar la capacidad de ordenar notas por fecha, título o etiquetas
+   - Crear carpetas o categorías para organizar notas y eventos
+
+8. Integrar con otros sistemas del juego:
+   - Conectar eventos de la agenda con objetivos diarios
+   - Usar las notas para registrar pensamientos sobre el progreso en el juego
+
+9. Implementar funcionalidades de exportación e importación:
+   - Crear opciones para exportar notas y eventos de la agenda en formatos comunes (por ejemplo, .txt, .ics)
+   - Implementar la capacidad de importar eventos de otros calendarios
+
+10. Crear un sistema de notas rápidas:
+    - Implementar una función para crear notas rápidas desde cualquier parte del juego
+    - Diseñar un widget o acceso rápido para ver las notas más recientes
+
+11. Implementar funcionalidades avanzadas:
+    - Crear un sistema de notas colaborativas para posibles expansiones multijugador
+    - Implementar un sistema de plantillas para tipos comunes de notas o eventos
+
+12. Diseñar un sistema de gamificación para notas y agenda:
+    - Crear logros relacionados con el uso consistente de notas y agenda
+    - Implementar recompensas en el juego por mantener una agenda organizada
+
+13. Pruebas:
+    - Crear casos de prueba para verificar la correcta creación, edición y eliminación de notas y eventos
+    - Probar la funcionalidad de recordatorios y notificaciones
+    - Verificar la correcta sincronización y persistencia de datos
+
+14. Documentación:
+    - Crear un archivo 'notas_y_agenda.md' en la carpeta 'docs/features/'
+    - Documentar cómo funcionan las notas y la agenda
+    - Explicar el sistema de etiquetas y organización
+    - Incluir información sobre la integración con otros sistemas del juego
+    - Documentar las funcionalidades de exportación e importación
+
+15. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de notas y agenda
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+16. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de notas y agenda
+    - Incluir un enlace a la documentación detallada en 'docs/features/notas_y_agenda.md'

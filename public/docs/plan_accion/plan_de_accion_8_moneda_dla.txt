@@ -1,0 +1,64 @@
+1. Diseñar el sistema de moneda DLA:
+   - Definir las propiedades de la moneda DLA (valor, cómo se obtiene, cómo se gasta)
+   - Crear una estructura de datos para almacenar la cantidad de DLA del jugador
+
+2. Implementar la lógica de obtención de DLA:
+   - Crear una función que calcule los DLA ganados basados en el rendimiento semanal
+   - Implementar la bonificación del 15% para DLA ganados después de una victoria
+
+3. Crear un sistema de gasto de DLA:
+   - Definir los ítems o beneficios que se pueden comprar con DLA
+   - Implementar funciones para gastar DLA y recibir los beneficios correspondientes
+
+4. Integrar con el sistema de informes semanales:
+   - Modificar el informe semanal para incluir los DLA ganados
+   - Crear una visualización clara de cómo se calcularon los DLA ganados
+
+5. Implementar la persistencia de datos:
+   - Guardar la cantidad actual de DLA del jugador
+   - Implementar un registro de transacciones de DLA (ganancias y gastos)
+
+6. Diseñar la interfaz de usuario para DLA:
+   - Crear una visualización del saldo actual de DLA
+   - Implementar una pantalla de historial de transacciones de DLA
+   - Diseñar una interfaz para gastar DLA (por ejemplo, una tienda)
+
+7. Crear un sistema de recompensas basado en DLA:
+   - Implementar logros relacionados con la acumulación y gasto de DLA
+   - Crear recompensas especiales para ciertos hitos de DLA
+
+8. Implementar un sistema de equilibrio:
+   - Crear herramientas para analizar la economía de DLA en el juego
+   - Implementar ajustes dinámicos para mantener el equilibrio económico
+
+9. Integrar con otros sistemas:
+   - Conectar el sistema de DLA con el sistema de inventario y equipamiento
+   - Utilizar DLA como parte de las mecánicas de muerte y victoria
+
+10. Crear un sistema de multiplicadores de DLA:
+    - Implementar eventos o condiciones que puedan multiplicar los DLA ganados
+    - Crear ítems especiales que puedan aumentar temporalmente la ganancia de DLA
+
+11. Implementar notificaciones:
+    - Crear alertas para informar al jugador cuando gane o gaste DLA
+    - Implementar notificaciones para oportunidades especiales de ganar DLA
+
+12. Pruebas:
+    - Crear casos de prueba para verificar la correcta ganancia y gasto de DLA
+    - Probar escenarios de acumulación a largo plazo y gastos masivos
+    - Verificar que la economía de DLA se mantenga equilibrada a lo largo del tiempo
+
+13. Documentación:
+    - Crear un archivo 'moneda_dla.md' en la carpeta 'docs/features/'
+    - Documentar cómo se obtiene y se gasta la moneda DLA
+    - Explicar el sistema de recompensas basado en DLA
+    - Incluir información sobre los multiplicadores de DLA
+    - Documentar cómo se integra el DLA con otros sistemas del juego
+
+14. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de moneda DLA
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+15. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de moneda DLA
+    - Incluir un enlace a la documentación detallada en 'docs/features/moneda_dla.md'

@@ -1,0 +1,59 @@
+1. Refinar la estructura de datos para la experiencia:
+   - Actualizar la clase o objeto de cada categoría para incluir:
+     - XP Base
+     - Ratio de crecimiento
+     - Nivel actual
+     - XP actual
+     - XP necesaria para el siguiente nivel
+
+2. Implementar la fórmula de cálculo de experiencia:
+   - Crear una función que calcule la XP necesaria para cada nivel usando la fórmula:
+     XP = XP_base * (ratio ^ (nivel - 1))
+
+3. Crear funciones para manejar la progresión del jugador:
+   - Función para añadir o restar XP basada en las actividades diarias
+   - Función para verificar y actualizar el nivel cuando se alcanza la XP necesaria
+   - Función para manejar la pérdida de niveles cuando la XP acumulada es negativa
+
+4. Implementar el sistema de reinicio:
+   - Crear una función que incremente el ratio de crecimiento de XP en un 5% para todas las actividades en caso de victoria
+   - Crear una función que incremente el ratio de crecimiento de XP en un 2% para todas las actividades en caso de derrota
+
+5. Implementar el cálculo de progresión:
+   - Crear funciones para calcular:
+     - La XP necesaria para cada nivel individual
+     - La XP acumulada necesaria para alcanzar cada nivel
+
+6. Integrar con la interfaz de usuario:
+   - Actualizar la interfaz para mostrar:
+     - XP actual y XP necesaria para el siguiente nivel en cada categoría
+     - Progreso visual (por ejemplo, una barra de progreso) para cada categoría
+
+7. Implementar la persistencia de datos:
+   - Guardar toda la información de XP, niveles y ratios de crecimiento
+   - Cargar estos datos al iniciar el juego
+
+8. Crear un sistema de logs:
+   - Implementar un registro detallado de los cambios de XP y nivel para cada categoría
+
+9. Pruebas:
+   - Crear casos de prueba para verificar:
+     - El cálculo correcto de XP necesaria para cada nivel
+     - La progresión y retroceso de niveles
+     - El funcionamiento del sistema de reinicio
+   - Probar escenarios de ganancia y pérdida de XP a largo plazo
+
+10. Documentación:
+    - Crear un archivo 'sistema_experiencia.md' en la carpeta 'docs/features/'
+    - Documentar detalladamente la fórmula de cálculo de experiencia
+    - Explicar cómo funciona la progresión del jugador
+    - Documentar el sistema de reinicio y sus efectos en la experiencia
+    - Incluir ejemplos de cálculos de experiencia en diferentes escenarios
+
+11. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de experiencia
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+12. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de experiencia
+    - Incluir un enlace a la documentación detallada en 'docs/features/sistema_experiencia.md'

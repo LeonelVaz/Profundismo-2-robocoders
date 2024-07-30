@@ -1,0 +1,225 @@
+1. Definir la estructura de datos para las categorías de vida:
+   - Crear un objeto o clase para representar cada categoría (Mente, Cuerpo, Alimentación, Higiene, Economía, Sueño)
+   - Incluir propiedades para nivel, experiencia actual y experiencia necesaria para el siguiente nivel
+
+2. Implementar el sistema de niveles:
+   - Crear una función para calcular el nivel global (LvG) basado en la suma de los niveles de categoría
+   - Implementar la lógica para aumentar y disminuir los niveles de categoría
+
+3. Crear funciones para manejar la experiencia:
+   - Función para añadir experiencia a una categoría
+   - Función para calcular la experiencia necesaria para el siguiente nivel (usando la fórmula proporcionada)
+   - Función para actualizar el nivel cuando se alcanza la experiencia necesaria
+
+4. Implementar los límites de nivel:
+   - Establecer el nivel máximo para cada categoría según el perfil del jugador
+   - Asegurar que los niveles no puedan bajar de 0
+
+5. Crear una interfaz de usuario para mostrar los niveles:
+   - Diseñar una visualización para los niveles de cada categoría
+   - Mostrar el nivel global (LvG)
+   - Actualizar la interfaz cuando los niveles cambien
+
+6. Implementar la persistencia de datos:
+   - Guardar los niveles y la experiencia de cada categoría
+   - Cargar estos datos al iniciar el juego
+
+7. Pruebas:
+   - Crear casos de prueba para verificar el correcto funcionamiento del sistema de niveles y categorías
+   - Probar escenarios de aumento y disminución de niveles
+   - Verificar que el LvG se calcule correctamente
+
+8. Documentación:
+   - Crear un archivo 'categorias_y_niveles.md' en la carpeta 'docs/features/'
+   - Documentar la estructura de datos de las categorías
+   - Explicar el sistema de niveles y cómo se calcula el LvG
+   - Documentar las fórmulas utilizadas para el cálculo de experiencia
+   - Incluir ejemplos de cómo los niveles afectan el juego
+
+9. Actualizar el CHANGELOG.md:
+   - Añadir una entrada para la implementación del sistema de categorías y niveles
+   - Incluir la fecha de implementación y una breve descripción de los cambios
+
+10. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de categorías y niveles
+    - Incluir un enlace a la documentación detallada en 'docs/features/categorias_y_niveles.md'
+
+
+Mas detalles para entender el proyecto:
+# Plan de Acción: Implementación de Categorías y Niveles
+
+## Contexto del Proyecto
+"Profundismo RPG" es un sistema de desarrollo personal gamificado que permite a los usuarios rastrear y mejorar varios aspectos de su vida diaria. Este plan de acción se centra en la implementación del sistema de categorías y niveles, que es fundamental para el funcionamiento del juego.
+
+## Objetivos
+1. Implementar la estructura de datos para las categorías de vida.
+2. Desarrollar el sistema de niveles, incluyendo el cálculo del nivel global (LvG).
+3. Crear un sistema de experiencia (EXP/XP) para cada categoría.
+4. Implementar los límites de nivel y la lógica de aumento/disminución de niveles.
+5. Diseñar una interfaz de usuario para mostrar los niveles y la experiencia.
+6. Implementar la persistencia de datos para guardar y cargar el progreso del jugador.
+
+## Estructura de Datos
+
+### Categorías de Vida
+- Mente (LvC_M)
+- Cuerpo (LvC_C)
+- Alimentación (LvC_A)
+- Higiene (LvC_H)
+- Economía (LvC_E)
+- Sueño (LvC_S)
+
+### Propiedades de cada Categoría
+- Nivel actual
+- Experiencia actual
+- Experiencia necesaria para el siguiente nivel
+- Nivel máximo (definido por el perfil del jugador)
+- Ratio de dificultad por nivel (definido por el perfil del jugador)
+- Experiencia base para el primer nivel (definido por el perfil del jugador)
+
+## Sistema de Niveles
+
+### Nivel Global (LvG)
+- Calcular como la suma de todos los niveles de categoría.
+- Representar como un número entero seguido de un decimal que indica el progreso promedio hacia el siguiente nivel.
+  Ejemplo: LvG 8.29 significa nivel 8 con un 29% de progreso promedio hacia el nivel 9.
+
+### Niveles de Categoría (LvC)
+- Representar como un número entero seguido de un decimal que indica el progreso hacia el siguiente nivel.
+  Ejemplo: LvC_S 5.35 significa nivel 5 con un 35% de progreso hacia el nivel 6 en la categoría Sueño.
+
+## Sistema de Experiencia
+
+### Cálculo de Experiencia Necesaria
+Utilizar la fórmula: XP = XP_base * (ratio ^ (nivel - 1))
+Donde:
+- XP_base es la experiencia base de la categoría
+- ratio es el ratio de dificultad de la categoría
+- nivel es el nivel actual
+
+### Ganancia y Pérdida de Experiencia
+- Implementar la lógica para añadir o restar experiencia basada en las actividades diarias del jugador.
+- Permitir que los niveles disminuyan si la experiencia acumulada es menor que 0, con un mínimo de nivel 0.
+
+## Límites de Nivel
+- Establecer el nivel máximo para cada categoría según el perfil del jugador.
+- Implementar la lógica para prevenir que los niveles excedan el máximo o bajen de 0.
+
+## Interfaz de Usuario
+- Diseñar una visualización clara para los niveles de cada categoría y el nivel global.
+- Mostrar la experiencia actual y la necesaria para el siguiente nivel en cada categoría.
+- Actualizar la interfaz en tiempo real cuando los niveles o la experiencia cambien.
+
+## Persistencia de Datos
+- Implementar funciones para guardar el estado actual de los niveles y la experiencia de cada categoría.
+- Crear funciones para cargar estos datos al iniciar el juego.
+
+## Consideraciones Adicionales
+- Implementar el sistema teniendo en cuenta futuros reinicios del juego (por victoria o derrota).
+- Preparar el sistema para manejar modificadores de experiencia (como bonificaciones o penalizaciones).
+- Considerar la integración con el sistema de perfiles para cargar los valores iniciales y máximos.
+
+## Pasos de Implementación
+
+1. Definir las estructuras de datos para las categorías y niveles.
+2. Implementar las funciones de cálculo de experiencia y niveles.
+3. Crear la lógica para aumentar y disminuir niveles basados en la experiencia.
+4. Desarrollar la interfaz de usuario para mostrar los niveles y la experiencia.
+5. Implementar las funciones de guardado y carga de datos.
+6. Realizar pruebas exhaustivas para verificar el correcto funcionamiento del sistema.
+7. Documentar el sistema de categorías y niveles en el archivo 'docs/features/categorias_y_niveles.md'.
+8. Actualizar el CHANGELOG.md con la implementación de esta característica.
+
+## Notas para el Desarrollador
+- Utilizar JavaScript para la lógica del juego y la manipulación del DOM.
+- Implementar la interfaz de usuario utilizando HTML y CSS.
+- Considerar el uso de localStorage para la persistencia de datos en el navegador.
+- Mantener el código modular y fácilmente extensible para futuras características.
+- Asegurarse de que el sistema sea fácilmente integrable con otros componentes del juego, como las actividades diarias y el sistema de perfiles.
+
+Este plan de acción proporciona una guía detallada para la implementación del sistema de categorías y niveles en "Profundismo RPG". Asegúrate de seguir las mejores prácticas de desarrollo web y mantener una comunicación abierta con el equipo para resolver cualquier duda o desafío que pueda surgir durante la implementación.
+
+Estructura del proyecto
+¦   CHANGELOG.md
+¦   index.html
+¦   README.md
+¦   
++---backup
+¦           
++---docs
+¦   ¦   index.md
+¦   ¦   
+¦   +---dev
+¦   ¦       desarrollo.md
+¦   ¦       example_resumen_semanal.txt
+¦   ¦       
+¦   +---guides
+¦   ¦       getting_started.md  (Aun vacio)
+¦   ¦       
+¦   +---plan_accion
+¦   ¦       plan_de_accion_1_categorias_y_niveles.txt (Este archivo)
+¦   ¦       plan_de_accion_2_actividades_y_puntuacion.txt
+¦   ¦       plan_de_accion_3_sistema_experiencia.txt
+¦   ¦       plan_de_accion_4_evaluacion_e_informes.txt
+¦   ¦       plan_de_accion_5_historial_y_persistencia.txt
+¦   ¦       plan_de_accion_6_mecanica_muerte_victoria.txt
+¦   ¦       plan_de_accion_7_umbrales_adaptativos.txt
+¦   ¦       plan_de_accion_8_moneda_dla.txt
+¦   ¦       plan_de_accion_9_objetivo_del_dia.txt
+¦   ¦       plan_de_accion_10_notas_y_agenda.txt
+¦   ¦       plan_de_accion_11_perfiles_y_creacion_perfiles.txt
+¦   ¦       plan_de_accion_12_inventario_y_equipamiento.txt
+¦   ¦       plan_de_accion_13_tienda.txt
+¦   ¦       plan_de_accion_14_item_dia_libre.txt
+¦   ¦       plan_de_accion_15_motivador_ai.txt
+¦   ¦       
+¦   +---prompts
+¦           
++---interface
+¦   +---character-creation
+¦   ¦       character-creation.css
+¦   ¦       character-creation.html
+¦   ¦       
+¦   +---common
+¦   ¦       common.css
+¦   ¦       
+¦   +---daily-activities
+¦   ¦       daily-activities.css (Aun vacio)
+¦   ¦       daily-activities.html (Aun vacio)
+¦   ¦       
+¦   +---game-screen
+¦   ¦       game-screen.css
+¦   ¦       game-screen.html
+¦   ¦       
+¦   +---history
+¦   ¦       history.css (Aun vacio)
+¦   ¦       history.html (Aun vacio)
+¦   ¦       
+¦   +---main-menu
+¦   ¦       main-menu.css
+¦   ¦       main-menu.html
+¦   ¦       
+¦   +---store
+¦   ¦       store.css (Aun vacio)
+¦   ¦       store.html (Aun vacio)
+¦   ¦       
+¦   +---weekly-report
+¦           weekly-report.css (Aun vacio)
+¦           weekly-report.html (Aun vacio)
+¦           
++---js
+    ¦   main.js
+    ¦   
+    +---test
+    ¦   +---categoriesAndLevelsTests.js
+    ¦
+    +---modules
+    ¦       categoriesAndLevels.js (Aqui se realizó la implementacion 1)
+    ¦       characterCreation.js
+    ¦       gameLogic.j
+    ¦       saveLoad.js
+    ¦       uiController.js
+    ¦       
+    +---utils
+            initParticles.js
+            particles-config.js

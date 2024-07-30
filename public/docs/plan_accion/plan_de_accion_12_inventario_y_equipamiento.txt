@@ -1,0 +1,67 @@
+1. Diseñar la estructura de datos para el inventario:
+   - Crear un objeto o clase para representar un ítem (nombre, descripción, tipo, efecto, duración)
+   - Implementar una estructura para almacenar múltiples ítems
+
+2. Crear el sistema de equipamiento:
+   - Diseñar slots de equipamiento (por ejemplo, cabeza, cuerpo, pies)
+   - Implementar la lógica para equipar y desequipar ítems
+
+3. Implementar la interfaz de usuario para el inventario:
+   - Crear una pantalla para visualizar todos los ítems en el inventario
+   - Diseñar controles para usar, equipar o descartar ítems
+
+4. Diseñar la interfaz de usuario para el equipamiento:
+   - Crear una visualización del personaje con los ítems equipados
+   - Implementar una forma fácil de cambiar entre ítems equipados
+
+5. Implementar la lógica de ítems temporales y permanentes:
+   - Crear un sistema para manejar la duración de los ítems temporales
+   - Implementar la lógica para que los ítems permanentes puedan ser desequipados
+
+6. Crear el sistema de efectos de ítems:
+   - Implementar diferentes tipos de efectos (boost de experiencia, aumento de niveles, etc.)
+   - Asegurar que los efectos se apliquen correctamente cuando los ítems están equipados
+
+7. Implementar la persistencia de datos:
+   - Guardar el estado del inventario y equipamiento
+   - Crear funciones para cargar estos datos al iniciar el juego
+
+8. Diseñar un sistema de límites de inventario:
+   - Implementar un límite máximo de ítems que se pueden llevar
+   - Crear opciones para aumentar el tamaño del inventario
+
+9. Crear un sistema de organización del inventario:
+   - Implementar funciones para ordenar y filtrar ítems
+   - Crear categorías o etiquetas para los ítems
+
+10. Integrar con otros sistemas:
+    - Conectar el inventario y equipamiento con el sistema de tienda
+    - Asegurar que los ítems afecten correctamente las mecánicas de juego (experiencia, niveles, etc.)
+
+11. Implementar un sistema de información de ítems:
+    - Crear descripciones detalladas para cada ítem
+    - Implementar tooltips o ventanas de información para mostrar los efectos de los ítems
+
+12. Crear un sistema de combinación de ítems:
+    - Implementar la capacidad de combinar ciertos ítems para crear nuevos
+    - Diseñar una interfaz para la combinación de ítems
+
+13. Pruebas:
+    - Crear casos de prueba para verificar el correcto funcionamiento del inventario y equipamiento
+    - Probar diferentes combinaciones de ítems equipados
+    - Verificar que los efectos de los ítems se apliquen y eliminen correctamente
+
+
+14. Documentación:
+    - Crear un archivo 'inventario_y_equipamiento.md' en la carpeta 'docs/features/'
+    - Documentar cómo funciona el inventario y el equipamiento
+    - Explicar las principales funcionalidades y cómo interactúan con otros sistemas
+    - Incluir ejemplos de uso y mejores prácticas
+
+15. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del inventario y el equipamiento
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+16. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el inventario y el equipamiento
+    - Incluir un enlace a la documentación detallada en 'docs/features/inventario_y_equipamiento.md'

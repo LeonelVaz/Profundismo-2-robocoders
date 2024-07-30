@@ -1,0 +1,136 @@
+Notas de desarrollo:
+
+LvC es el nivel de cata categoria.
+LvG es la suma de todos los niveles de categoria.
+
+Si bien no existen niveles como "5.35" que aparece en el ejemplo de sueño en LvCs, este se refiere a que es nivel 5 con un 35% de experiencia acumulada de 100% para llegar al proximo nivel. Este se representa luego del punto 5."35" por convenciencia para la explicación de los calculos.
+Ten en cuenta que en el "LvG", en este caso utilizado el numero "8.29" como numero del LvG del dia Domingo, se refiere a que el jugador es LvG 8 y tiene en promedio 29% de experiencia promedio.
+Estos 6 números dan como resultado un promedio de 29: 12, 25, 30, 44, 28, 35
+Vamos a verificar el cálculo:
+La suma de los números es: 12 + 25 + 30 + 35 + 28 + 44 = 174
+Dividimos la suma entre la cantidad de números (6): 174 / 6 = 29
+Por lo tanto, el promedio es 29.
+
+Dia libre o simplemente "Libre" se refiere a que el jugador ese dia utilizó el item "Dia libre":
+Este item hace que no se altere la exp ni los niveles en el dia, por lo que podras hacer lo que quieras ese dia y no tendras ninguna repercucion en el juego.
+Cuando se realiza el informe semanal los dias que se utilizaron el item "Dia libre" contarán como medio punto de dia bueno, como se puede ver en el ejemplo a continuacion.
+
+Significado de siglas:
+db = Dia Bueno
+dm = Dia Malo
+dh = Dia Meh
+dl = Dia Libre
+dlb = Dia Libre Bueno
+dhm = Dia Meh Malo
+dla = Moneda del juego.
+
+lvG = Nivel Global (Suma de todos los LvC)
+LvC = Nivel de categoria.
+LvC_M = Nivel de categoria especificando que es de Mente
+LvC_C = Nivel de categoria especificando que es de Cuerpo
+LvC_A = Nivel de categoria especificando que es de Alimentacion
+LvC_H = Nivel de categoria especificando que es de Higiene
+LvC_E = Nivel de categoria especificando que es de Economia
+LvC_S = Nivel de categoria especificando que es de Sueño
+
+
+Si tiene entre -0.3 y +1.0 es un dia meh.
+Si tiene menos de -0.3 es un dia malo.
+Si tiene mas de +1.0 es un dia bueno.
+Libre significa que fue un dia Libre.
+
+
+En "Dias buenos - Dias Malos:" se verifica si hubieron mas dias buenos o mas dias malos. En el caso de que haya mas dias malos, en vez de "Sobreviviste" es "Has sido Eliminado" y el juego se reinicia a nivel 0, se pierden todos los items y dla acumulados, ademas se comienza con una penalizacion (Acumulable, la penalizacion no desaparece exepto que se use un item especial)
+Que sea acumulable quiere decir que será guardado como "Muertes acumuladas" Cada muerte acumulada, tiene una respectiva penalización como un 10% menos de experiencia recibida hasta que se utilice el item que quita la maldicion.
+Esta maldicion contempla todos los lvC:
+LvC_M = Nivel de Mente
+LvC_C = Nivel de Cuerpo
+LvC_A = Nivel de Alimentacion
+LvC_H = Nivel de Higiene
+LvC_E = Nivel de Economia
+LvC_S = Nivel de Sueño
+
+
+En cambio, al llegar a nivel maximo (100 lvG) el juego te da la opcion de reiniciar, pero en este caso se obtendrá una bonificacion de 15% a todos los nuevos dla que se ganen, ademas se conservara los dla y todo el inventario, solo se reinicia el nivel, este reinicio tambien hace que sea mas dificil subir de nivel, pero a diferencia de la maldicion por perder, no tienen una penalizacion en la obtencion de experiencia, sinó que el ratio de aumento de exp necesario por cada nivel aumenta, este aumento se define en los perfiles cuando el jugador inicia el juego, por ejemplo, el polifacetico tiene un ratio de 1.05 base en cada lvC, y al reiniciar estará configurado para que tenga un 1.05 osea 5% mas de ratio la exp necesaria en cada nivel. Cada lvc tiene un ratio base en particular el perfil polifacetico tiene un 1.05 de ratio base en cada uno, pero dependiendo el perfil este puede variar, por ejemplo, en otro ejemplo en LvC_S podria tener un ratio base de 1.07 y en LvC_H podria tener un ratio base de 1.03. Luego el ratio de reinicio es una propiedad aparte, que se aplica sobre el ratio base de cada lvC, este ratio de reinicio es un ratio global que se aplica sobre todos los LvC, osea que si tenias el ratio de 1.07 en LvC_H (Por ejemplo lv1: 100 puntos exp, lv2: 107 puntos exp) ahora tendras un ratio de 1.05 de exp extra sobre la experiencia que ya necesitavas, ejemplo: lv 1 necesita 105 puntos en vez de 100, y lv 2 necesita 112,35 puntos en vez de 107, osea que primero se aplica el primer ratio y luego el ratio global por reinicio, puede haber varios reinicios por lo que esto se tendra que tener en cuenta en el desarrollo, cada reinicio es acumulable, la diferencia es que el segundo reinicio si se suma al ratio global, osea que en vez de 0.5 será 0.10 (Esto lo aclaro para que no se mal entienda no es el 0.5 sobre el anterior 0.5, sino que como son ratios globales se suman dando como resultado 0.10, por ejemplo, si hubo 2 reinicios se suman 0.05 de ratio global a cada reinicio, osea 0.10 de ratio global, hagamos la cuenta: lv 1 necesitará 110 puntos de exp (100 con el ratio global 1.10), para nivel 2 se necesitará 117,7 puntos de exp (100 pasa a 107 por el ratio base de 1.07 luego a 107 se le aplica el ratio de 1.10 que da como resultado 117,7)
+
+
+
+Ejemplo de informe semanal:
+==================================================
+
+2024 - Nombre de la partida - Numero de resumen semanal (Ejemplo: "Semana 2")
+==================================================
+
+Resumen 22-07 al 28-07
+
+LvG: 8.29
+LvCs:
+	Mente: 0.12
+	Cuerpo: 0.25
+	Alimentacion: 0.30
+	Higiene: 0.44
+	Economia: 3.28
+	Sueño: 5.35
+	
+==================================================
+
+21-07 - Domingo: 3.4 (Dia anterior al comienzo de este resumen)
+
+22-07 - Lunes: 3.9		(Meh)
+23-07 - Martes: Libre 	(Libre)
+24-07 - Miercoles: 5.36	(Bueno)
+25-07 - Jueves: 4.85		(Malo)
+26-07 - Viernes: 10.95	(Bueno)
+27-07 - Sabado: Libre		(Libre)
+28-07 - Domingo: 8.29		(Malo)
+
+==================================================
+
+Dias buenos: 2 db
+Dias Malos: 2 dm
+Dias Meh: 1 dh
+Dias Libres: 2 dl
+
+Calculo de dias buenos:
+2 dl / 2 = 1 dlb
+2 db + 1 dlb = 3 db
+
+Calculo de dias malos:
+1 dh / 2 = 0.5 dhm
+2 dm + 0.5 dhm = 2.5 dm
+
+Dias buenos - Dias Malos:
+3 db - 2.5 dm = 0.5 dla
+
+Dias libres adicionales:
+1.35 dla (Anteriormente acumulados) + 0.5 dla (Nuevos dla conseguidos) = 1.85 dla (Actuales)
+
+
+¡Sobreviviste! - Semana 2
+
+Rango: Polifacetico Lv 8.29
++ 0.5 dla
++ 4.89 LvG
++ 3.29 LvC_E
++ 5.00 LvC_S
+
+Sin modificar:
+0.00 LvC_C
+0.00 LvC_A
+0.00 LvC_H
+0.00 LvC_E
+
+
+Aqui termina el ejemplo del informe semanal
+
+
+==================================================
+Detalles enumerados:
+
+1. El resumen abarca del 22 al 28 de julio de 2024, siendo la semana 2 de la partida.
+2. Se registran los niveles globales (LvG) y los niveles de categorías específicas (LvCs).
+3. Hay un sistema para clasificar los días como buenos, malos, meh o libres.
+4. Se calculan los dla basándose en el balance entre días buenos y malos.
+5. El juego tiene un sistema de "supervivencia" y "eliminación" basado en el balance de días buenos y malos.
+6. Las penalizaciones por perder y las bonificaciones por ganar afectan a futuras partidas.
+7. Los dla funcionan como moneda en el juego.

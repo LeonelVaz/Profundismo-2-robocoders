@@ -1,0 +1,77 @@
+1. Implementar la lógica de "muerte":
+   - Crear una función que verifique si hay más días malos que buenos en una semana
+   - Implementar el reinicio del juego en caso de "muerte"
+   - Crear un sistema de penalizaciones:
+     - Implementar la pérdida de todos los ítems y DLA acumulados
+     - Crear un contador de "muertes acumuladas"
+     - Implementar la penalización de 10% menos de experiencia recibida por cada muerte acumulada
+
+2. Implementar la lógica de "victoria":
+   - Crear una función que verifique si se ha alcanzado el nivel máximo (100 lvG)
+   - Implementar la opción de reinicio voluntario en caso de victoria
+   - Crear un sistema de bonificaciones:
+     - Implementar la conservación de DLA e inventario
+     - Crear una bonificación del 15% a todos los nuevos DLA ganados
+
+3. Diseñar la interfaz de usuario para muerte y victoria:
+   - Crear pantallas de notificación para cuando ocurra una muerte o victoria
+   - Diseñar una interfaz para mostrar las penalizaciones o bonificaciones aplicadas
+   - Implementar un diálogo de confirmación para el reinicio voluntario en caso de victoria
+
+4. Implementar el sistema de reinicio:
+   - Crear funciones para reiniciar todos los niveles a 0
+   - Implementar la lógica para ajustar la dificultad después de cada reinicio:
+     - Aumentar el ratio de experiencia necesaria en un 5% para victoria
+     - Aumentar el ratio de experiencia necesaria en un 2% para muerte
+
+5. Crear un sistema de registro de muertes y victorias:
+   - Implementar un contador de muertes y victorias totales
+   - Crear un registro detallado de cada muerte y victoria, incluyendo fecha y estadísticas relevantes
+
+6. Implementar la persistencia de datos:
+   - Guardar el contador de muertes acumuladas y las bonificaciones por victoria
+   - Asegurar que las penalizaciones y bonificaciones se mantengan después de reiniciar el juego
+
+7. Crear el sistema de "maldición" por muertes:
+   - Implementar la lógica para aplicar la penalización de experiencia basada en muertes acumuladas
+   - Crear un ítem especial que pueda quitar la maldición
+   - Implementar la lógica para usar y aplicar el efecto del ítem que quita la maldición
+
+8. Integrar con otros sistemas:
+   - Conectar el sistema de muerte y victoria con el sistema de informes semanales
+   - Integrar las penalizaciones y bonificaciones con el sistema de experiencia
+   - Vincular el reinicio del juego con el sistema de perfiles y creación de personajes
+
+9. Implementar notificaciones:
+   - Crear alertas para informar al jugador cuando esté cerca de una muerte o victoria
+   - Implementar notificaciones para recordar al jugador sobre sus penalizaciones o bonificaciones activas
+
+10. Crear un sistema de logros:
+    - Implementar logros relacionados con sobrevivir cierto número de semanas o alcanzar ciertos niveles
+    - Crear recompensas especiales para logros relacionados con muertes y victorias
+
+11. Pruebas:
+    - Crear casos de prueba para verificar el correcto funcionamiento de las mecánicas de muerte y victoria
+   - Probar diferentes escenarios de muertes y victorias consecutivas
+    - Verificar la correcta aplicación y persistencia de penalizaciones y bonificaciones
+    - Asegurar que el reinicio del juego funcione correctamente en ambos casos
+
+12. Optimizar el balance del juego:
+    - Realizar pruebas de jugabilidad para ajustar los umbrales de muerte y victoria
+    - Balancear las penalizaciones y bonificaciones para mantener el juego desafiante pero justo
+    - Implementar un sistema de dificultad adaptativa basado en el historial de muertes y victorias del jugador
+
+13. Documentación:
+    - Crear un archivo 'mecanica_muerte_victoria.md' en la carpeta 'docs/features/'
+    - Documentar las condiciones para la "muerte" y la "victoria"
+    - Explicar las penalizaciones por muerte y las bonificaciones por victoria
+    - Incluir información sobre cómo afecta al juego a largo plazo
+    - Documentar el sistema de "maldición" y cómo se puede eliminar
+
+14. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación de las mecánicas de muerte y victoria
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+15. Actualizar el README.md:
+    - Añadir una sección que describa brevemente las mecánicas de muerte y victoria
+    - Incluir un enlace a la documentación detallada en 'docs/features/mecanica_muerte_victoria.md'

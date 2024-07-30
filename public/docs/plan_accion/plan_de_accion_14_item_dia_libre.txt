@@ -1,0 +1,62 @@
+1. Diseñar la estructura de datos para el ítem "Día Libre":
+   - Crear un objeto o clase para representar el ítem "Día Libre"
+   - Incluir propiedades como cantidad disponible y fecha de caducidad (para los obtenidos como premio semanal)
+
+2. Implementar la lógica de obtención del ítem:
+   - Crear funciones para adquirir el ítem en la tienda por 2 DLA
+   - Implementar la lógica para otorgar 2 ítems "Día Libre" como premio semanal
+
+3. Crear el sistema de uso del ítem:
+   - Implementar una función para consumir el ítem "Día Libre"
+   - Asegurar que el uso del ítem no altere la exp ni los niveles del día
+
+4. Diseñar la interfaz de usuario para el ítem:
+   - Crear un botón o control para usar el ítem "Día Libre"
+   - Implementar una visualización clara de la cantidad de ítems disponibles
+
+5. Implementar el sistema de caducidad:
+   - Crear una función que elimine los ítems no utilizados al final de la semana (solo para los obtenidos como premio)
+   - Implementar un sistema de notificaciones para recordar al jugador sobre los ítems a punto de caducar
+
+6. Integrar con el sistema de informes semanales:
+   - Modificar el informe semanal para contar los días libres como medio punto de día bueno
+   - Asegurar que los días libres se representen correctamente como "Libre" en el informe
+
+7. Crear el sistema de persistencia de datos:
+   - Guardar la cantidad de ítems "Día Libre" disponibles
+   - Implementar funciones para cargar estos datos al iniciar el juego
+
+8. Integrar con otros sistemas:
+   - Conectar el ítem "Día Libre" con el sistema de tienda
+   - Asegurar que el uso del ítem afecte correctamente las mecánicas de juego (evaluación diaria, informes semanales)
+
+9. Implementar restricciones de uso:
+   - Crear una función que limite el uso del ítem a una vez por día
+   - Implementar una confirmación antes de usar el ítem para evitar usos accidentales
+
+10. Crear un sistema de estadísticas:
+    - Implementar un seguimiento del uso de ítems "Día Libre" a lo largo del tiempo
+    - Crear visualizaciones para mostrar cómo afecta el uso de estos ítems al progreso del jugador
+
+11. Diseñar un sistema de recompensas por uso estratégico:
+    - Implementar logros relacionados con el uso efectivo de los días libres
+    - Crear bonificaciones especiales por usar los días libres en momentos estratégicos
+
+12. Pruebas:
+    - Crear casos de prueba para verificar la correcta obtención, uso y caducidad del ítem
+    - Probar cómo afecta el uso del ítem a los informes semanales y la progresión general
+    - Verificar que las restricciones de uso y la integración con otros sistemas funcionen correctamente
+
+13. Documentación:
+    - Crear un archivo 'item_dia_libre.md' en la carpeta 'docs/features/items/'
+    - Documentar cómo funciona el item "Dia libre"
+    - Explicar las principales funcionalidades y cómo interactúan con otros sistemas
+    - Incluir ejemplos de uso y mejores prácticas
+
+14. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del item "Dia libre"
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+15. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el item "Dia libre"
+    - Incluir un enlace a la documentación detallada en 'docs/features/items/item_dia_libre.md'

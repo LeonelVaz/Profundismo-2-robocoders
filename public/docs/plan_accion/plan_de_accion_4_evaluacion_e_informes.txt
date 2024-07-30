@@ -1,0 +1,61 @@
+1. Implementar la evaluación diaria:
+   - Crear una función que calcule los cambios en el LvG al final de cada día
+   - Implementar la lógica para clasificar los días como buenos, malos, "meh" o libres basándose en los cambios del LvG
+   - Definir los umbrales para cada clasificación (por ejemplo, +1.0 para día bueno, -0.3 para día malo)
+
+2. Crear el sistema de informes semanales:
+   - Diseñar la estructura de datos para almacenar la información semanal
+   - Implementar una función que recopile los datos diarios y los resuma para el informe semanal
+   - Incluir en el resumen:
+     - LvG actual
+     - LvCs para cada categoría
+     - Resumen de días (buenos, malos, meh, libres)
+     - Cálculo de DLA ganados
+
+3. Implementar el cálculo de DLA:
+   - Crear una función que calcule los DLA ganados basándose en la diferencia entre días buenos y malos
+   - Implementar la lógica para contar los días libres como medio punto de día bueno
+
+4. Diseñar la interfaz de usuario para los informes:
+   - Crear una visualización diaria que muestre la clasificación del día
+   - Diseñar una pantalla de informe semanal que muestre toda la información recopilada
+   - Implementar una forma de navegar por informes semanales anteriores
+
+5. Implementar el sistema de "sobrevivencia" y "eliminación":
+   - Crear una función que determine si el jugador sobrevivió la semana o fue eliminado
+   - Implementar las consecuencias de la eliminación (reinicio del juego, pérdida de ítems y DLA, aplicación de penalizaciones)
+   - Implementar las recompensas por sobrevivir (ganancia de DLA, ítems de "Día libre")
+
+6. Crear el sistema de persistencia de datos:
+   - Guardar los datos diarios y semanales
+   - Implementar la carga de estos datos al iniciar el juego
+   - Crear un sistema de respaldo para los informes semanales
+
+7. Integrar con otros sistemas:
+   - Conectar la evaluación diaria con el sistema de actividades y puntuación
+   - Integrar el cálculo de DLA con el sistema de moneda del juego
+   - Vincular el sistema de "sobrevivencia" y "eliminación" con el sistema de reinicio del juego
+
+8. Implementar notificaciones:
+   - Crear alertas para informar al jugador sobre la clasificación del día
+   - Implementar notificaciones para cuando el informe semanal esté disponible
+
+9. Pruebas:
+   - Crear casos de prueba para la evaluación diaria y los informes semanales
+   - Probar diferentes escenarios de semanas (con diferentes combinaciones de días buenos, malos, meh y libres)
+   - Verificar la correcta aplicación de recompensas y penalizaciones
+
+10. Documentación:
+    - Crear un archivo 'evaluacion_e_informes.md' en la carpeta 'docs/features/'
+    - Documentar el proceso de evaluación diaria
+    - Explicar cómo se generan los informes semanales
+    - Incluir ejemplos de informes semanales
+    - Documentar cómo se calculan los DLA y su relación con los días buenos/malos
+
+11. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de evaluación e informes
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+12. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de evaluación e informes
+    - Incluir un enlace a la documentación detallada en 'docs/features/evaluacion_e_informes.md'

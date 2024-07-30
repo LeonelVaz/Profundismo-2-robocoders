@@ -1,0 +1,67 @@
+1. Diseñar la estructura de datos para la tienda:
+   - Crear un objeto o clase para representar un ítem de la tienda (nombre, descripción, precio, tipo)
+   - Implementar una estructura para almacenar el inventario de la tienda
+
+2. Crear la interfaz de usuario de la tienda:
+   - Diseñar una pantalla principal de la tienda con categorías de ítems
+   - Implementar una vista detallada para cada ítem
+
+3. Implementar el sistema de compra:
+   - Crear funciones para comprar ítems usando DLA
+   - Implementar verificaciones de saldo suficiente
+   - Asegurar que los ítems comprados se añadan correctamente al inventario del jugador
+
+4. Diseñar el sistema de precios:
+   - Implementar precios base para cada ítem
+   - Crear un sistema de descuentos o ofertas especiales
+
+5. Implementar un sistema de inventario dinámico:
+   - Crear un stock limitado para ciertos ítems
+   - Implementar reabastecimiento periódico de la tienda
+
+6. Crear un sistema de ítems especiales:
+   - Implementar ítems raros o únicos que aparezcan ocasionalmente
+   - Crear eventos especiales de la tienda (ventas, ofertas por tiempo limitado)
+
+7. Implementar la persistencia de datos:
+   - Guardar el estado de la tienda (inventario, precios, ofertas)
+   - Crear funciones para cargar estos datos al abrir la tienda
+
+8. Diseñar un sistema de recomendaciones:
+   - Implementar un algoritmo que sugiera ítems basados en el estilo de juego del jugador
+   - Crear una sección de "ítems recomendados" en la tienda
+
+9. Crear un sistema de reseñas de ítems:
+   - Implementar la capacidad de los jugadores para calificar y comentar sobre los ítems
+   - Mostrar calificaciones promedio en la vista de ítems
+
+10. Integrar con otros sistemas:
+    - Conectar la tienda con el sistema de inventario y equipamiento
+    - Asegurar que la compra de ítems afecte correctamente el saldo de DLA del jugador
+
+11. Implementar notificaciones:
+    - Crear alertas para nuevos ítems en la tienda
+    - Implementar notificaciones para ofertas especiales o descuentos
+
+12. Crear un sistema de historial de compras:
+    - Implementar un registro de todas las transacciones del jugador
+    - Diseñar una interfaz para ver el historial de compras
+
+13. Pruebas:
+    - Crear casos de prueba para verificar el correcto funcionamiento de compras y ventas
+    - Probar diferentes escenarios de ofertas y descuentos
+    - Verificar que el inventario de la tienda se actualice correctamente
+
+14. Documentación:
+    - Crear un archivo 'tienda.md' en la carpeta 'docs/features/'
+    - Documentar cómo funciona la tienda
+    - Explicar las principales funcionalidades y cómo interactúan con otros sistemas
+    - Incluir ejemplos de uso y mejores prácticas
+
+15. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación de la tienda
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+16. Actualizar el README.md:
+    - Añadir una sección que describa brevemente la tienda
+    - Incluir un enlace a la documentación detallada en 'docs/features/tienda.md'

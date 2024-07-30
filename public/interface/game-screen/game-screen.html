@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/interface/game-screen/game-screen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-screen" class="game-container">
+        <header>
+            <div class="header-left">
+                <h1 id="global-level">Lv 1</h1>
+                <h2 id="player-title">Polifacético</h2>
+            </div>
+            <div class="header-center">
+                <div class="progress-bar">
+                    <div id="global-progress" class="progress"></div>
+                </div>
+            </div>
+            <div class="header-right">
+                <h1 id="player-name">Name</h1>
+            </div>
+        </header>
+
+        <main role="main">
+            <section class="section left-panel">
+                <div class="tab-container">
+                    <button class="tab-button active" data-tab="stats-panel">Stats</button>
+                    <button class="tab-button" data-tab="skills-panel">Skills</button>
+                </div>
+
+                <div id="stats-panel" class="panel-content">
+                    <div id="category-mente" class="stat-item">
+                        <div class="stat-icon">🧠</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="category-cuerpo" class="stat-item">
+                        <div class="stat-icon">💪</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="category-alimentacion" class="stat-item">
+                        <div class="stat-icon">🍎</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="category-higiene" class="stat-item">
+                        <div class="stat-icon">🚿</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="category-economia" class="stat-item">
+                        <div class="stat-icon">💰</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div id="category-sueno" class="stat-item">
+                        <div class="stat-icon">😴</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="panel-content hidden" id="skills-panel">
+                    <!-- Add skills content here -->
+                </div>
+            </section>
+            <section class="character-container">
+                <div class="person-large">
+                    <div class="person">
+                        <div class="leg left-leg">
+                            <div class="shoe"></div>
+                        </div>
+                        <div class="leg right-leg">
+                            <div class="shoe"></div>
+                        </div>
+                        <div class="remera">
+                            <div class="remera-design">⚡</div>
+                        </div>
+                        <div class="arm left-arm">
+                            <div class="hand"></div>
+                        </div>
+                        <div class="arm right-arm">
+                            <div class="hand"></div>
+                        </div>
+                        <div class="head">
+                            <div class="pelo"></div>
+                            <div class="eyes left-eye"></div>
+                            <div class="eyes right-eye"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-background">
+                    <!-- Add geometric shapes and glyphs here -->
+                </div>
+            </section>
+            <section class="right-panel">
+                <div class="tab-container">
+                    <button class="tab active" data-tab="inventory">Inventory</button>
+                    <button class="tab" data-tab="equipment">Equipment</button>
+                </div>
+                <div class="panel-content" id="inventory-panel">
+                    <div class="inventory-item">
+                        <div class="inventory-icon">🪙</div>
+                        <span>11</span>
+                    </div>
+                    <div class="inventory-item">
+                        <div class="inventory-icon">🎫</div>
+                        <span>Vale por 12hs</span>
+                    </div>
+                    <div class="inventory-item">
+                        <div class="inventory-icon">☁️</div>
+                        <span>Dia libre (2)</span>
+                    </div>
+                </div>
+                <div class="panel-content hidden" id="equipment-panel">
+                    <!-- Add equipment content here -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="character-names">
+                <span>Tienda</span>
+                <span>Tema</span>
+                <span>Agenda</span>
+                <span>Notas</span>
+                <span>Historial</span>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <div class="menu-dropdown">
+        <button class="dropdown-toggle">☰</button>
+        <div class="dropdown-content">
+            <button id="customize-character">Personalizar</button>
+            <button id="save-game">Guardar</button>
+            <button id="save-as-game">Guardar como</button>
+            <button id="load-game">Cargar personaje</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+1. Diseñar la estructura de datos para perfiles:
+   - Crear un objeto o clase para representar un perfil de juego
+   - Incluir propiedades para las actividades y puntuaciones en cada categoría de vida
+
+2. Implementar el sistema de selección de perfiles:
+   - Crear una interfaz para que los jugadores puedan elegir un perfil al inicio del juego o al reiniciar
+   - Implementar la lógica para cargar las configuraciones del perfil seleccionado
+
+3. Crear el sistema de creación de perfiles personalizados:
+   - Diseñar una interfaz de usuario para la creación de perfiles
+   - Implementar formularios para definir actividades y puntuaciones para cada categoría
+   - Crear validaciones para asegurar que los perfiles creados sean equilibrados y jugables
+
+4. Implementar la persistencia de perfiles:
+   - Guardar los perfiles predefinidos y personalizados
+   - Crear funciones para cargar, actualizar y eliminar perfiles
+
+5. Diseñar el sistema de niveles máximos por perfil:
+   - Implementar la lógica para establecer niveles máximos diferentes para cada categoría según el perfil
+   - Crear una visualización clara de los límites de nivel para el jugador
+
+6. Crear el sistema de ratios de dificultad:
+   - Implementar la lógica para aplicar diferentes ratios de dificultad por nivel según el perfil
+   - Asegurar que estos ratios afecten correctamente la progresión del jugador
+
+7. Implementar el sistema de experiencia inicial:
+   - Crear funciones para establecer la experiencia necesaria para el primer nivel en cada categoría según el perfil
+
+8. Diseñar un sistema de desbloqueo de perfiles:
+   - Implementar condiciones para desbloquear nuevos perfiles predefinidos (por ejemplo, alcanzar ciertos logros)
+   - Crear una interfaz para mostrar perfiles bloqueados y desbloqueados
+
+9. Crear un sistema de recomendación de perfiles:
+   - Implementar un algoritmo que sugiera perfiles basados en el estilo de juego del jugador
+   - Diseñar una interfaz para presentar estas recomendaciones
+
+10. Integrar con otros sistemas:
+    - Conectar el sistema de perfiles con el sistema de actividades diarias
+    - Asegurar que los cambios de perfil afecten correctamente todos los aspectos del juego
+
+11. Implementar un sistema de comparación de perfiles:
+    - Crear una interfaz que permita a los jugadores comparar diferentes perfiles
+    - Implementar visualizaciones claras de las diferencias entre perfiles
+
+12. Crear un sistema de compartir perfiles:
+    - Implementar funcionalidades para exportar e importar perfiles personalizados
+    - Crear un sistema de códigos para compartir perfiles fácilmente
+
+13. Pruebas:
+    - Crear casos de prueba para verificar el correcto funcionamiento de diferentes perfiles
+    - Probar la creación, edición y eliminación de perfiles personalizados
+    - Verificar que los cambios de perfil afecten correctamente la jugabilidad
+
+14. Documentación:
+    - Crear un archivo 'perfiles_y_creacion_perfiles.md' en la carpeta 'docs/features/'
+    - Documentar cómo funciona los perfiles y la creacion de perfiles.
+    - Explicar las principales funcionalidades y cómo interactúan con otros sistemas
+    - Incluir ejemplos de uso y mejores prácticas
+
+15. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación de los perfiles y la creacion de perfiles.
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+16. Actualizar el README.md:
+    - Añadir una sección que describa brevemente los perfiles y la creacion de perfiles.
+    - Incluir un enlace a la documentación detallada en 'docs/features/perfiles_y_creacion_perfiles.md'

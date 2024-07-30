@@ -1,0 +1,65 @@
+1. Diseñar el sistema de umbrales adaptativos:
+   - Definir los parámetros que se ajustarán (niveles mínimos y máximos de cada categoría)
+   - Crear una estructura de datos para almacenar los umbrales actuales y el historial de rendimiento
+
+2. Implementar la lógica de ajuste de umbrales:
+   - Crear una función que analice el rendimiento del jugador a lo largo del tiempo
+   - Implementar algoritmos para ajustar los umbrales basados en el rendimiento:
+     - Aumentar los umbrales si el jugador mantiene un alto rendimiento
+     - Disminuir los umbrales si el jugador lucha constantemente
+
+3. Crear un sistema de seguimiento del rendimiento:
+   - Implementar funciones para registrar el rendimiento diario y semanal del jugador
+   - Crear métricas para evaluar el rendimiento (por ejemplo, promedio de niveles, frecuencia de días buenos/malos)
+
+4. Integrar con el sistema de experiencia:
+   - Modificar el sistema de experiencia para tener en cuenta los umbrales adaptativos
+   - Asegurar que los cambios en los umbrales afecten correctamente la dificultad del juego
+
+5. Implementar la persistencia de datos:
+   - Guardar los umbrales actuales y el historial de rendimiento
+   - Cargar estos datos al iniciar el juego para mantener la continuidad
+
+6. Diseñar la interfaz de usuario para los umbrales adaptativos:
+   - Crear una visualización que muestre los umbrales actuales para cada categoría
+   - Implementar una forma de mostrar cómo han cambiado los umbrales a lo largo del tiempo
+
+7. Crear un sistema de notificaciones:
+   - Implementar alertas para informar al jugador cuando los umbrales cambien significativamente
+   - Crear mensajes motivacionales basados en los cambios de umbrales
+
+8. Implementar controles de usuario:
+   - Crear opciones para que los jugadores puedan ver y entender cómo funcionan los umbrales adaptativos
+   - Implementar una opción para desactivar los umbrales adaptativos si el jugador lo desea
+
+9. Balancear el sistema:
+   - Realizar pruebas extensivas para asegurar que los ajustes de umbrales sean justos y motivadores
+   - Implementar límites para evitar que los umbrales se vuelvan demasiado fáciles o difíciles
+
+10. Integrar con otros sistemas:
+    - Conectar los umbrales adaptativos con el sistema de informes semanales
+    - Utilizar los umbrales adaptativos para ajustar la dificultad de las actividades diarias
+
+11. Crear un sistema de registro:
+    - Implementar un log detallado de todos los cambios en los umbrales
+    - Crear herramientas para analizar cómo los umbrales afectan el rendimiento del jugador a largo plazo
+
+12. Pruebas:
+    - Crear casos de prueba para verificar el correcto funcionamiento de los umbrales adaptativos
+    - Probar escenarios de rendimiento consistentemente alto y bajo
+    - Verificar que los umbrales se ajusten correctamente a lo largo del tiempo
+
+13. Documentación:
+    - Crear un archivo 'umbrales_adaptativos.md' en la carpeta 'docs/features/'
+    - Documentar cómo funcionan los umbrales adaptativos
+    - Explicar cómo se ajustan los umbrales basados en el rendimiento del jugador
+    - Incluir ejemplos de cómo los umbrales afectan la dificultad del juego
+    - Documentar las opciones de control del usuario sobre los umbrales adaptativos
+
+14. Actualizar el CHANGELOG.md:
+    - Añadir una entrada para la implementación del sistema de umbrales adaptativos
+    - Incluir la fecha de implementación y una breve descripción de los cambios
+
+15. Actualizar el README.md:
+    - Añadir una sección que describa brevemente el sistema de umbrales adaptativos
+    - Incluir un enlace a la documentación detallada en 'docs/features/umbrales_adaptativos.md'
